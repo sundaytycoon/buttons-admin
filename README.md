@@ -33,8 +33,15 @@ git add .
 git commit -m "setting up yarn2"
 
 npm i -g react-app-rewired # 이런저런 웹팩설정 너무 귀찮아서 
+# 어차피; 어드민이니까 자동으로 다 되었으면 좋겠어서 사용
 # package.json 내용 변경
 # create config-overrides.js
+# tsconfig그냥 복붙함
+# config-verrides.js 그냥 다 불러옴 webpack내용관리하는데 쓰임
+# scrtips/ config/ 디렉토리 제거함
+git add .
+git commit -m "fix: project struct changed to react-app-rewired"
+
 ```
 
 # getting started

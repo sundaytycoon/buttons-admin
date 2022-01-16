@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "isolatedModules": false,
+    "noEmit": false,
+    "strict": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@server/*": ["./server/*"],
+      "@client/*": ["./client/*"],
+      "@shared/*": ["./shared/*"]
+    }
+  },
+  "include": [
+    "server",
+    "shared"
+  ],
+  "exclude": ["node_modules"]
+}
