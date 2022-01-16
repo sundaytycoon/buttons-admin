@@ -5,9 +5,8 @@ import {
   Routes,
 } from 'react-router-dom';
 
-import { Layout, Menu, Breadcrumb } from 'antd';
-import 'antd/dist/antd.css'
-
+import { Layout, Menu } from 'antd';
+import 'antd/dist/antd.min.css'
 
 
 

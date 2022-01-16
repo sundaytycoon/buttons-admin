@@ -2,6 +2,11 @@
 
 - [yarn2](https://yarnpkg.com/getting-started/install) # no npm
 - node v16.13.2
+- [react-app-rewired](https://github.com/timarney/react-app-rewired)
+- recoil
+- direnv
+
+
 
 # project setting processes
 
@@ -27,9 +32,9 @@ yarn start
 git add .
 git commit -m "setting up yarn2"
 
-yarn add --global eslint
-eslint --init
-
+npm i -g react-app-rewired # 이런저런 웹팩설정 너무 귀찮아서 
+# package.json 내용 변경
+# create config-overrides.js
 ```
 
 # getting started
