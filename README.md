@@ -46,12 +46,13 @@ git commit -m "fix: project struct changed to react-app-rewired"
 
 # getting started
 
-``` bash
-nvm use v16.13.2
-npm install -g yarn
-yarn init -2
+``` bash\
+yarn server # locally run
+yarn client # locally run
 
-
-
+cd ../buttons-api # git clone git@github.com:sundaytycoon/buttons-api.git
+docker-compose up --build -d
+go run cmd/main.go entd migration
+go run cmd/main.go server start
 ```
 
