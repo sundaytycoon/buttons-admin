@@ -27,5 +27,7 @@ module.exports = {
   'rules': {
     'indent': ['error', 2],
     'no-unused-vars': ['error', {'vars': 'all', 'args': 'after-used', 'ignoreRestSiblings': false}],
+    'react/no-children-prop': 'off',
+    'max-len': 'off',
   },
 };

@@ -1,23 +1,28 @@
-import React from 'react';
+import * as React from 'react';
 
+import styled from 'styled-components';
 import {
-    Layout,
-    Breadcrumb,
+  Layout,
+  Breadcrumb,
 } from 'antd';
 
-const App:React.FC = () => {
-    return (
-    <Layout.Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
-        <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
-            <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
-        <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-            Co
-        </div>
+export const HomePage:React.FC = () => {
+  return (
+    <Layout.Content style={{padding: '0 1rem'}}>
+      <Breadcrumb style={{margin: '16px 0'}}>
+        <Breadcrumb.Item>Home</Breadcrumb.Item>
+        <Breadcrumb.Item>List</Breadcrumb.Item>
+        <Breadcrumb.Item>App</Breadcrumb.Item>
+      </Breadcrumb>
+      <InnerContent>
+        현재 로그인되어있진 않아요
+      </InnerContent>
     </Layout.Content>
-    );
-}
+  );
+};
 
-export default App;
+
+const InnerContent = styled.div`
+  padding: 0 1rem;
+  min-height: 24rem;
+`;

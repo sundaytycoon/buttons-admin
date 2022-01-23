@@ -23,7 +23,7 @@ const initializeServer = async () => {
     });
   }
 
-  server.use('/proxy', handlerProxy);
+  server.use('/proxy/buttons-api', handlerProxy);
 
   server.listen(PORT, () => {
     console.log(`Server Running, PORT: ${PORT}`);

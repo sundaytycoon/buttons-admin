@@ -1,9 +1,9 @@
-import express from 'express';
+import * as express from 'express';
 import axios, {Method} from 'axios';
 import logger from '@server/logger';
 
 const handlerProxy = async (req:express.Request, res:express.Response) => {
-  const proxyUrl = 'http://localhost:5000';
+  const proxyUrl = 'http://localhost:5002';
   const proxyUri = `${proxyUrl}${req.url}`;
   const startDate = new Date();
 
@@ -34,7 +34,8 @@ const handlerProxy = async (req:express.Request, res:express.Response) => {
     res.status(proxyRes.status);
     res.send(proxyRes.data);
 
-    logger.info('message 입니다.', {
+    logger.info({
+      message: 'info',
       router: req.baseUrl,
       requestUrl: proxyUri,
       method: req.method,
@@ -50,7 +51,8 @@ const handlerProxy = async (req:express.Request, res:express.Response) => {
     res.status(status);
     res.send(data);
 
-    logger.error('message 입니다.', {
+    logger.error({
+      message: 'error',
       router: req.baseUrl,
       requestUrl: proxyUri,
       method: req.method,
