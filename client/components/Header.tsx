@@ -13,7 +13,7 @@ export const Header:React.FC = () => {
   });
 
   const load = React.useCallback(async () => {
-    const {data: {redirect_url: redirectUrl}} = await proxyButtonsApi.get('/api/v1/auth/redirect_url');
+    const {data: {redirect_url: redirectUrl}} = await proxyButtonsApi.get('/api/v1/auth/web/redirect_url?provider=google&service=buttons-admin');
     setRedirectUrls({
       ...redirectUrls,
       google: redirectUrl,
