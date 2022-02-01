@@ -55,22 +55,3 @@ docker-compose up --build -d
 go run cmd/main.go entd migration
 go run cmd/main.go server start
 ```
-
-20220124 @drakejin dailylog
-
-[한일]
-- h3 admin page 제작
-- buttons
-  - Google Login작성완료.
-
-[할일]
-- h3
-  - hoian-webapp 에게 줄 rpc production배포하기
-  - admin에 permerlink만들기 - url공유시 바로 사용할 수 있도록
-- 금지어 프로젝트 structure 구조 만들기
-- 오전 회의
-- 오후 회의
-- 퇴근후 헬스장
-
-[아무말]
-- 내일 백신맞으러 가유.

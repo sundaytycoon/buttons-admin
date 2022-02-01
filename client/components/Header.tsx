@@ -24,7 +24,6 @@ export const Header:React.FC = () => {
     load();
   }, []);
 
-  console.log(redirectUrls.google);
 
   return (
     <Layout.Header style={{width: '100%'}}>
